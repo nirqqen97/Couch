@@ -1,0 +1,156 @@
+/* -----------------------------------------------vars------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+.portfolio-hero-btn:focus,
+.portfolio-hero-btn:hover {
+    color: #FFFFFF;
+    background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+
+
+}
+
+.porfolio-hero-item1:hover .prt-text,
+.porfolio-hero-item1:focus .prt-text,
+.prt-link:focus .prt-text {
+    transform: translateY(0);
+}
+
+
+.prt-wrap-text {
+    position: relative;
+    overflow: hidden;
+}
+
+.prt-text {
+    position: absolute;
+    top: 0;
+    background-color: rgba(33, 150, 243, 0.9);
+    ;
+    height: 100%;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 63px 24px 63px 24px;
+    transform: translateY(101%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.prt-link {
+    display: block;
+}
+
+.prt-link:hover,
+.prt-link:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio-wrap {
+    padding: 20px 24px;
+}
+
+.porfolio-hero1 {
+    padding-top: 56px;
+}
+
+.portfolio-hero {
+    padding-bottom: 94px;
+    padding-top: 94px;
+}
+
+.portfolio-hero-title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    color: var(--main-text-color);
+    letter-spacing: 0.06em;
+
+}
+
+.portfolio-hero-text {
+    font-size: 18px;
+    line-height: 2;
+    color: var(--second-text-color);
+    letter-spacing: 0.06em;
+    margin-top: 4px;
+}
+
+.porfolio-hero-item {
+    margin-left: 8px;
+}
+
+
+
+.portfolio-hero-btn {
+    display: inline-block;
+    border-radius: 4px;
+    border: 0px;
+    padding: 6px 22px;
+    background-color: var(--team-background-color);
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-title-color);
+    cursor: pointer;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+}
+
+.porfolio-hero-item1 {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #EEEEEE;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.porfolio-hero-item1:focus,
+.porfolio-hero-item1:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
+}
+
+.porfolio-hero-item1:nth-child(n+7) {
+    margin-bottom: 0px;
+}
+
+.porfolio-hero-item1:nth-child(3n) {
+    margin-right: 0;
+}
+
+.porfolio-hero-list1 {
+    flex-wrap: wrap;
+    padding-inline-start: 0px;
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+
+}
+
+
+.porfolio-hero-list {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    margin-bottom: 50px;
+}
