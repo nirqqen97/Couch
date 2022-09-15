@@ -240,15 +240,34 @@ address {
 }
 
 .container {
-    width: 1200px;
+    width: 100%;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
 }
 
+@media screen and (min-width: 480px) {
+    .container {
+        width: 480px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1200px;
+    }
+}
+
 /* ---------------------------------------HEADER------------------------------- */
 .header {
     border: 1px solid #ECECEC;
+
 
 }
 
@@ -256,6 +275,20 @@ address {
     display: flex;
     gap: 40px;
 
+}
+
+@media screen and (min-width: 768px) {
+    .header-list {
+        margin-right: 25px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .header-list {
+        display: flex;
+        gap: 40px;
+
+    }
 }
 
 .header-link {
@@ -310,6 +343,15 @@ address {
     color: var(--main-text-color);
 }
 
+/* ------------------------------------------------------------------768-------------------------------------------------------------------------- */
+@media screen and (min-width: 768px) {
+    .header-info {
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+}
+
+
 /* ------------------------------------------------------------------HERO-------------------------------------------------------------------------- */
 .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../image/hero-image.jpg);
@@ -333,6 +375,27 @@ address {
     color: white
 }
 
+@media screen and (min-width: 768px) {
+    .hero-title {
+        font-size: 35px;
+        margin-right: 15px;
+        margin-left: 15px;
+
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hero-title {
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: white
+    }
+}
+
 .hero-text {
     font-weight: 900;
     font-size: 32px;
@@ -343,6 +406,26 @@ address {
     margin-bottom: 15px;
 
 }
+
+@media screen and (min-width: 768px) {
+    .hero-text {
+        font-size: 28px;
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hero-text {
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 1.36;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: rgb(209, 207, 207);
+        margin-bottom: 15px;
+    }
+}
+
 
 .hero-btn {
     font-weight: 900;
@@ -379,6 +462,20 @@ address {
 /* ------------------------------------------------------------------------------------------------------------ */
 .about-second-list {
     margin-left: -30px;
+    display: flex;
+}
+
+@media screen and (min-width: 768px) {
+    .about-second-list {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .about-second-list {
+        margin-left: -30px;
+        display: flex;
+    }
 }
 
 .about-second {
@@ -401,6 +498,23 @@ address {
     position: relative;
 }
 
+@media screen and (min-width: 768px) {
+    .about-second-item {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .about-second-item {
+        margin-left: 30px;
+        position: relative;
+        margin-bottom: 0px;
+
+    }
+}
+
 .about-top-text {
     position: absolute;
     bottom: 0;
@@ -416,6 +530,32 @@ address {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+    .about-top-text {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .about-top-text {
+        position: absolute;
+        bottom: 0;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.15;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background-color: rgba(47, 48, 58, 0.8);
+        height: 23.8%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
 }
 
 /* --------------------------------------------------------------FOOTER---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
