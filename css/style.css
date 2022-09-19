@@ -461,8 +461,8 @@ address {
 
 /* ------------------------------------------------------------------------------------------------------------ */
 .about-second-list {
-    margin-left: -30px;
-    display: flex;
+    margin: 0 auto;
+    display: block;
 }
 
 @media screen and (min-width: 768px) {
@@ -496,13 +496,14 @@ address {
 .about-second-item {
     margin-left: 30px;
     position: relative;
+    margin-bottom: 20px;
 }
 
 @media screen and (min-width: 768px) {
     .about-second-item {
         display: flex;
         justify-content: center;
-        margin-bottom: 20px;
+
     }
 }
 
@@ -526,7 +527,7 @@ address {
     color: #FFFFFF;
     background-color: rgba(47, 48, 58, 0.8);
     height: 23.8%;
-    width: 100%;
+    width: 88%;
     display: flex;
     align-items: center;
     justify-content: center;
