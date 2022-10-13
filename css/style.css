@@ -695,3 +695,16 @@ footer {
     text-align: center;
     margin-top: 20px;
 }
+
+@media screen and (min-width: 300px) {
+    .reqvs {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .reqvs {
+        font-size: 20px;
+
+    }
+}
