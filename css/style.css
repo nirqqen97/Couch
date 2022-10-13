@@ -332,7 +332,6 @@ address {
 
 }
 
-.header-item {}
 
 .header__container {
     justify-content: space-between;
@@ -553,6 +552,12 @@ address {
     }
 }
 
+@media screen and (min-width: 480px) {
+    .about-top-text {
+        width: 88%;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .about-top-text {
         width: 52%;
@@ -620,4 +625,73 @@ footer {
 
 .footer-link {
     color: #212121;
+}
+
+/* -----------------------------------contract------------------------------------------------- */
+
+.hero-title-gallery {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: black
+}
+
+.hero-contract {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+
+.ofetra-title {
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 1.36;
+    text-align: left;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: black;
+    margin: 10px;
+}
+
+.oferta-item {
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    /* margin-bottom: 5px; */
+    color: #383838;
+}
+
+.reqvs {
+    font-size: 20px;
+    line-height: 1.33;
+    /* margin-bottom: 15px; */
+    text-align: left;
+    /* padding-left: 15px;
+    padding-right: 15px; */
+}
+
+.oferta-block {
+    display: block;
+    margin-top: 15px;
+}
+
+.justify {
+    display: flex;
+}
+
+.ofetra-title-reqvs {
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 1.36;
+    text-align: left;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: black;
+    margin: 10px;
+    text-align: center;
+    margin-top: 20px;
 }
