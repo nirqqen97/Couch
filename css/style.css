@@ -7,13 +7,14 @@
 
 }
 
-@media screen and (min-width: 480px) {
+
+@media screen and (min-width: 300px) {
     .sect-slider {
         display: none;
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
     .sect-slider {
         display: block;
     }
@@ -544,6 +545,12 @@ address {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media screen and (min-width: 300px) {
+    .about-top-text {
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 768px) {
