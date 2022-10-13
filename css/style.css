@@ -352,6 +352,26 @@ address {
     color: var(--accent-color);
 }
 
+@media screen and (min-width: 300px) {
+    .header-logo {
+        font-size: 16px;
+        padding: 34px 0;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .header-logo {
+        padding: 27px 0;
+        font-size: 26px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .header-logo {
+        padding: 24px 0;
+    }
+}
+
 .header-studio {
     color: var(--main-text-color);
 }
