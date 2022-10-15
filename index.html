@@ -48,7 +48,10 @@
           та родиною, структурувати плани і цілі,<br />Мотивуємо і налагодимо
           зовнішній контроль.
         </p>
-        <button class="hero-btn btn">Подати заявку</button>
+        <button type="button" class="hero-btn btn" data-modal-open>
+           Подати заявку
+           
+        </button>
       </div>
     </section>
 
@@ -149,13 +152,15 @@
               <li class="footer-item item">Пошта:</li>
 
               <li class="footer-item item">
-                <a href="mailto: abc@example.com" class="footer-link link"
+                <a
+                  href="mailto:coach.in.ukraine@gmail.com"
+                  class="footer-link link"
                   >coach.in.ukraine@gmail.com</a
                 >
               </li>
             </ul>
           </div>
-          <form action="mailto:myemail@email.com" class="form-inline">
+          <form action="mailto:coach.in.ukraine@gmail.com" class="form-inline">
             <div class="form-group">
               <label class="subscriberName">Ім'я</label>
               <input
@@ -181,5 +186,74 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <!-- я удалил тут ис хиден!! -->
+      <div class="modal">
+        <button type="button" class="modal-btn" data-modal-close>
+         
+        </button>
+        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+        <form>
+          <div class="modal-field">
+            <label class="moda-text">Ваше имя </label>
+            <div class="input-wrap">
+              <input
+                type="text"
+                class="modal-input"
+                name="user-name"
+                required
+              />
+            
+            </div>
+          </div>
+          <div class="modal-field">
+            <label class="moda-text">Телефон</label>
+            <div class="input-wrap">
+              <input
+                type="text"
+                class="modal-input"
+                name="user-name"
+                required
+              />
+             
+            </div>
+          </div>
+          <div class="modal-field">
+            <label class="moda-text">Почта</label>
+            <div class="input-wrap">
+              <input
+                type="text"
+                class="modal-input"
+                name="user-name"
+                required
+              />
+           
+            </div>
+          </div>
+          <div class="modal-field-com">
+            <label for="user-text" class="moda-text">Комментарий</label>
+            <textarea
+              name="user-text"
+              id="user-text"
+              class="modal-textarea"
+              placeholder="Введите текст"
+            ></textarea>
+          </div>
+          <div class="modal-field-flex">
+            <input
+              type="checkbox"
+              name="privacy"
+              value="true"
+              class="modal-check visually-hidden"
+              id="privacy"
+            />
+            <label for="privacy" class="check-text">
+              Соглашаюсь с рассылкой и принимаю
+            </label>
+            <a href="" class="modal-doc">Условия договора</a>
+          </div>
+          <button type="submit" class="modal-btn-sbm">Отправить</button>
+        </form>
+      </div>
   </body>
 </html>
