@@ -470,8 +470,8 @@ address {
     border-radius: 10px;
     border: none;
     padding: 15px;
-    /* padding-left: 30px;
-    padding-right: 30px; */
+    padding-left: 30px;
+    padding-right: 30px;
     display: block;
     margin: 0 auto;
     transition: color, 250ms, background-color, 250ms;

@@ -12,4 +12,10 @@
       refs.modal.classList.toggle("is-hidden");
     }
   })();
-  console.log(refs.openModalBtn)
+ const formref =  document.querySelector(".prevent")
+formref.addEventListener('submit',formSubmit)
+// function formSubmit(e) {
+//   e.preventDefault()
+  
+// }
+console.log(formref)
