@@ -12,10 +12,3 @@
       refs.modal.classList.toggle("is-hidden");
     }
   })();
- const formref =  document.querySelector(".prevent")
-formref.addEventListener('submit',formSubmit)
-// function formSubmit(e) {
-//   e.preventDefault()
-  
-// }
-console.log(formref)

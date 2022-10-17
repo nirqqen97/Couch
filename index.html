@@ -198,6 +198,7 @@
                 class="modal-input"
                 name="user-name"
                 required
+                id="name"
               />
             </div>
           </div>
@@ -209,6 +210,7 @@
                 class="modal-input"
                 name="user-name"
                 required
+                id="phone"
               />
             </div>
           </div>
@@ -220,6 +222,7 @@
                 class="modal-input"
                 name="user-name"
                 required
+                id="email"
               />
             </div>
           </div>
@@ -245,12 +248,15 @@
             </label>
             <a href="" class="modal-doc">Условия договора</a>
           </div>
-          <button type="submit" class="modal-btn-sbm">Отправить</button>
+          <button type="button" class="modal-btn-sbm" id="sendMail">
+            Отправить
+          </button>
         </form>
       </div>
     </div>
 
     <script src="./js/modal.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="./js/formmail.js"></script>
   </body>
 </html>
