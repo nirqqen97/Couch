@@ -1,23 +1,25 @@
 $("#sendMail").on('click',function(e) {
-    var name = $('#name').val()
-    var phone = $('#phone').val()
-    var email = $('#email').val()
-    var usertext = $('user-text').val()
+    var name = $('#name').val().trim()
+    var phone = $('#phone').val().trim()
+    var email = $('#email').val().trim()
+    var message = $('#message').val().trim()
     $.ajax({
         url: '',
         type: 'POST',
         cache: 'false',
-        data: {'name': name, 'phone': phone, 'email': email, 'usertext': usertext },
+        data: {'name': name, 'phone': phone, 'email': email, 'message': message },
         dataType: 'html',
         beforeSend: function () {
             // $("#sendMail").prop("disabled", true);
         },
         success: function (data) {
+            if (!data) {
+                alert("Помилка")
+                return
+            }
             alert(data);
-            // $("#sendMail").prop("disabled", false);
+            $("form").trigger("reset")
 
         }
     })
 })
-const btn = $("#sendMail")
-console.log(btn)
