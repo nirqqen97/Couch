@@ -4,7 +4,7 @@ $("#sendMail").on('click',function(e) {
     var email = $('#email').val().trim()
     var message = $('#message').val().trim()
     $.ajax({
-        url: '',
+        url: 'ajax/mail.php',
         type: 'POST',
         cache: 'false',
         data: {'name': name, 'phone': phone, 'email': email, 'message': message },
@@ -17,7 +17,7 @@ $("#sendMail").on('click',function(e) {
                 alert("Помилка")
                 return
             }
-            alert(data);
+            alert('data');
             $("form").trigger("reset")
 
         }

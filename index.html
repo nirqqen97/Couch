@@ -189,14 +189,16 @@
       <div class="modal">
         <button type="button" class="modal-btn" data-modal-close>x</button>
         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
-        <form class="prevent" id="form">
+        <!-- ----------------------------------------form------------------------? -->
+        <form class="prevent" id="form" action="insert.php" method="POST">
           <div class="modal-field">
             <label class="moda-text">Ваше имя </label>
+
             <div class="input-wrap">
               <input
                 type="text"
                 class="modal-input"
-                name="user-name"
+                name="username"
                 required
                 id="name"
               />
@@ -206,9 +208,9 @@
             <label class="moda-text">Телефон</label>
             <div class="input-wrap">
               <input
-                type="text"
+                type="phone"
                 class="modal-input"
-                name="user-name"
+                name="phone"
                 required
                 id="phone"
               />
@@ -218,9 +220,9 @@
             <label class="moda-text">Почта</label>
             <div class="input-wrap">
               <input
-                type="text"
+                type="email"
                 class="modal-input"
-                name="user-name"
+                name="email"
                 required
                 id="email"
               />
