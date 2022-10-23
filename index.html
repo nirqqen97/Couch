@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>hiu</title>
+    <link rel="shortcut icon" href="/image/gen-2.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -190,7 +191,7 @@
         <button type="button" class="modal-btn" data-modal-close>x</button>
         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
         <!-- ----------------------------------------form------------------------? -->
-        <form class="prevent" id="form" action="insert.php" method="POST">
+        <form class="prevent" id="form" action="mail.php" method="POST">
           <div class="modal-field">
             <label class="moda-text">Ваше имя </label>
 
@@ -198,9 +199,9 @@
               <input
                 type="text"
                 class="modal-input"
-                name="username"
+                name="user_name"
                 required
-                id="name"
+                placeholder="Например, Иван"
               />
             </div>
           </div>
@@ -208,11 +209,12 @@
             <label class="moda-text">Телефон</label>
             <div class="input-wrap">
               <input
-                type="phone"
+                type="text"
                 class="modal-input"
-                name="phone"
+                name="user_phone"
                 required
                 id="phone"
+                placeholder="+380 (050) 999 99 99"
               />
             </div>
           </div>
@@ -220,18 +222,18 @@
             <label class="moda-text">Почта</label>
             <div class="input-wrap">
               <input
-                type="email"
+                type="text"
                 class="modal-input"
-                name="email"
+                name="user_email"
                 required
-                id="email"
+                placeholder="mail@gmail.com"
               />
             </div>
           </div>
           <div class="modal-field-com">
             <label for="user-text" class="moda-text">Комментарий</label>
             <textarea
-              name="message"
+              name="user_message"
               id="message"
               class="modal-textarea"
               placeholder="Введите текст"
@@ -248,17 +250,13 @@
             <label for="privacy" class="check-text">
               Соглашаюсь с рассылкой и принимаю
             </label>
-            <a href="" class="modal-doc">Условия договора</a>
+            <a href="/contract.html" class="modal-doc">Условия договора</a>
           </div>
-          <button type="button" class="modal-btn-sbm" id="sendMail">
-            Отправить
-          </button>
+          <button type="submit" class="modal-btn-sbm">Отправить</button>
         </form>
       </div>
     </div>
 
     <script src="./js/modal.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="./js/formmail.js"></script>
   </body>
 </html>
